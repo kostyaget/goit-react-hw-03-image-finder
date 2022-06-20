@@ -8,7 +8,7 @@ class Searchbar extends Component {
     };
 
     handleQueryChange = event => {
-        this.setStage({ searchQuery: event.currentTarget.value.toLoverCase() });
+        this.setState({ searchQuery: event.currentTarget.value.toLowerCase() });
     };
 
     handleSubmit = event => {
@@ -27,14 +27,14 @@ return (
 <header className={s.searchbar}>
     <form className={s.form} onSubmit={this.handleSubmit}>
     <button type="submit" className={s.button}>
-        <span className={s.button-label}>Search</span>
+        <span className={s.label}>Search</span>
     </button>
 
         <input
             className={s.input}
             type="text"
-            autocomplete="off"
-            autofocus
+            autoComplete="off"
+            autoFocus
             placeholder="Search images and photos"
             value={this.state.searchQuery}
             onChange={this.handleQueryChange}
@@ -42,4 +42,6 @@ return (
     </form>
 </header>
 )}
-}
+};
+
+export default Searchbar;

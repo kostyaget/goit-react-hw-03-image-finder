@@ -37,7 +37,7 @@ class Modal extends Component {
     }
 }
 
-Modal.prototype = {
+Modal.propTypes = {
     largeImageURL: PropTypes.string.isRequired,
     alt: PropTypes.string,
     onClick: PropTypes.func.isRequired,

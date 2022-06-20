@@ -7,7 +7,7 @@ const Button = ({ onClick }) => (
         Load more
     </button>
 );
-button.PropTypes = {
+Button.propTypes = {
     onClick: PropTypes.func.isRequired,
 };
 
