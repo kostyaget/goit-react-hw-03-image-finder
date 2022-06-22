@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Searchbar from './Searchbar16';
-import ImageGallery from './ImageGallery666';
-import Loader from './Loader000';
-import Button from './Button007';
-import Modal from './modal228';
+import Searchbar from './Searchbar';
+import ImageGallery from './ImageGallery';
+import Loader from './Loader';
+import Button from './Button';
+import Modal from './modal';
 
 import s from './App.module.css';
 
